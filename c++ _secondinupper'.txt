@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+#include<string.h>
+int main(){
+    string input1="wipro technologies";
+    string l="less";
+string s=input1;
+    string ouput1,sub;
+    int len=s.length();
+    int pos=s.find(" ");
+    if(pos==0){
+        return l;
+            }
+            else{
+    sub=s.substr(pos+1,0);
+            }
+    for(int i=0;sub[i]!='\0';i++){
+        if(sub[i]>=97 &&sub[i]<=122){
+            sub[i]=sub[i]-32;
+        }
+    }
+    for(int i=0;sub[i]!='\0';i++){
+         cout<<sub[i];
+    }
+    return 0;
+}
