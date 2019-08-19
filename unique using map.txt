@@ -1,0 +1,25 @@
+#include<iostream>
+#include<map>
+#include<algorithm>
+using namespace std;
+
+
+int main()
+{
+    int n=2012;
+    map<int,int>m;
+    while(n>0){
+        int r=n%10;
+        m[r]++;
+        n=n/10;
+    }
+  map<int,int>:: iterator itr;
+  int sum=0;
+  for(itr=m.begin();itr!=m.end();itr++){
+     cout<<itr->first<<" "<<itr->second<<endl;
+  }
+    cout<<m.size()<<endl;
+    
+cout<<"sum:"<<sum;
+return 0;
+}

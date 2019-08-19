@@ -1,0 +1,18 @@
+int sum1=0;
+    int sum=0;
+    int temp=input1;
+    int i=0;
+    int a[50];
+    for(;temp>0;i++)
+    {
+        a[i]=temp%10;
+        temp=temp/10;
+    }
+    for(int k=i;k>0;k--)
+    {
+        for(int j=k-1;j>=0;j--){
+        sum=sum+a[j];
+    }
+   
+    }
+    return sum;
